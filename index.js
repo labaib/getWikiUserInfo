@@ -18,8 +18,7 @@ const getWikiUserInfo = async (endpoint) => {
         const url = `https://${endpoint}/w/api.php?${params.toString()}`
         const response = await fetch(url, { 
             credentials: "include", 
-            'Access-Control-Allow-Origin': '*',
-            mode: "no-cors"
+            'Access-Control-Allow-Origin': '*'
         });
         const data = await response.json();
 
