@@ -22,12 +22,12 @@ const getWikiUserInfo = async (endpoint) => {
         if (data.query?.userinfo) {
             return data.query.userinfo
         } else {
-            return false
+            return null
         }
 
     } catch (error) {
         console.error("Errore durante la verifica dello stato di login:", error);
-        return false
+        return null
     }
 }
 
