@@ -17,7 +17,7 @@ const getWikiUserInfo = async (endpoint) => {
     try {
         const proxy = "https://cors-proxy.readinmonkey.workers.dev/?url="
         const url = `https://${endpoint}/w/api.php?${params.toString()}`
-        const response = await fetch(proxy+url, { credentials: "include"});
+        const response = await fetch(proxy+url);
         const data = await response.json();
 
         if (data.query?.userinfo) {
