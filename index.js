@@ -17,7 +17,7 @@ const getWikiUserInfo = async (endpoint) => {
     try {
 
         const url = `https://${endpoint}/w/api.php?${params.toString()}`
-        const response = await fetch(url);
+        const response = await fetch(url, { credentials: "include" });
         const data = await response.json();
 
         if (data.query?.userinfo) {
