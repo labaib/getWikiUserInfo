@@ -1,11 +1,11 @@
 /**
 * Ottieni informazioni utente da sessione Wikidata
-* @param {string} endpoint - Istanza wiki ["www.wikidata.org"]
+* @param {string} [endpoint="www.wikidata.org"] - opzionale
 * @returns {Object|null} - Ritorna una stringa o null
 */
 
 // Verifica stato di autenticazione
-const getWikiUserInfo = async (endpoint) => {
+const getWikiUserInfo = async (endpoint = "www.wikidata.org") => {
 
     // Parametri URL
     const params = new URLSearchParams({

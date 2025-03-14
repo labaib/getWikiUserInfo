@@ -33,7 +33,7 @@ import { getWikiUserInfo } from './js/getWikiUserInfo.js';
  import { getWikiUserInfo } from 'https://cdn.jsdelivr.net/gh/labaib/getWikiUserInfo@main/index.js';
 
  (async () => {
-     const info = await getWikiUserInfo("www.wikidata.org");
+     const info = await getWikiUserInfo();
  })();
 
 </script>
@@ -44,7 +44,7 @@ import { getWikiUserInfo } from './js/getWikiUserInfo.js';
   import { getWikiUserInfo } from './js/getWikiUserInfo.js';
 
   (async () => {
-    const info = await getWikiUserInfo("www.wikidata.org");
+    const info = await getWikiUserInfo();
   })();
 
 </script>
